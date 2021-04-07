@@ -1,4 +1,4 @@
-@backgroundColor: #001529;
+@backgroundColor: #2150d8;
 @dividerColor: rgba(255, 255, 255, 0.5);
 @textColor: rgba(255, 255, 255, 0.75);
 @brandColor: #ff7964; // Redash logo color
@@ -6,7 +6,7 @@
 @iconSize: 26px;
 
 .desktop-navbar {
-  background: @backgroundColor;
+  background: @backgroundColor !important;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -33,10 +33,12 @@
   }
 
   .ant-menu {
+    background: @backgroundColor !important;
     .ant-menu-item,
     .ant-menu-submenu {
       font-weight: 500;
       color: @textColor;
+
 
       &.navbar-active-item {
         box-shadow: inset 3px 0 0 @activeItemColor;
